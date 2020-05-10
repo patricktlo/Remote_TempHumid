@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name SHT20)(type Legacy)(uri /home/patrick/Documents/Projects/Remote_TempHumid/PCB/Remote_TempHumid/libs/SHT20/SHT20.lib)(options "")(descr ""))
+  (lib (name ESP12S)(type Legacy)(uri /home/patrick/Documents/Projects/Remote_TempHumid/PCB/Remote_TempHumid/libs/ESP12S/ESP-12S.lib)(options "")(descr ""))
+)
