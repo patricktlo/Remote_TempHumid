@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name SHT20)(type KiCad)(uri /home/patrick/Documents/Projects/Remote_TempHumid/PCB/Remote_TempHumid/libs/SHT20)(options "")(descr ""))
+  (lib (name 18650_Connector)(type KiCad)(uri /home/patrick/Documents/Projects/Remote_TempHumid/PCB/Remote_TempHumid/libs/BK-18650-PC2)(options "")(descr ""))
+)

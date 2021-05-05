@@ -1,0 +1,444 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L remote_th:DW01+G U?
+U 1 1 5EC86CBD
+P 6650 2750
+AR Path="/5EC86CBD" Ref="U?"  Part="1" 
+AR Path="/5EC757F2/5EC86CBD" Ref="U5"  Part="1" 
+F 0 "U5" H 6625 3125 50  0000 C CNN
+F 1 "DW01+G" H 6625 3034 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6250 3000 50  0001 C CNN
+F 3 "" H 6250 3000 50  0001 C CNN
+F 4 " C14213" H 6650 2750 50  0001 C CNN "LCSC"
+	1    6650 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L remote_th:TP4054 U?
+U 1 1 5EC86CC4
+P 4850 2950
+AR Path="/5EC86CC4" Ref="U?"  Part="1" 
+AR Path="/5EC757F2/5EC86CC4" Ref="U3"  Part="1" 
+F 0 "U3" H 5050 3250 50  0000 C CNN
+F 1 "TP4054" H 5050 3150 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4850 3350 50  0001 C CNN
+F 3 "" H 4850 3350 50  0001 C CNN
+F 4 "C32574" H 4850 2950 50  0001 C CNN "LCSC"
+	1    4850 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3750 4850 3500
+$Comp
+L Device:CP_Small C?
+U 1 1 5EC86CD1
+P 3900 3250
+AR Path="/5EC86CD1" Ref="C?"  Part="1" 
+AR Path="/5EC757F2/5EC86CD1" Ref="C9"  Part="1" 
+F 0 "C9" H 3988 3296 50  0000 L CNN
+F 1 "1u" H 3988 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3900 3250 50  0001 C CNN
+F 3 "~" H 3900 3250 50  0001 C CNN
+F 4 "C28323" H 3900 3250 50  0001 C CNN "LCSC"
+	1    3900 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EC86CD8
+P 5350 3350
+AR Path="/5EC86CD8" Ref="R?"  Part="1" 
+AR Path="/5EC757F2/5EC86CD8" Ref="R6"  Part="1" 
+F 0 "R6" H 5409 3396 50  0000 L CNN
+F 1 "2.2k" H 5409 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5350 3350 50  0001 C CNN
+F 3 "~" H 5350 3350 50  0001 C CNN
+F 4 "C4190" H 5350 3350 50  0001 C CNN "LCSC"
+	1    5350 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3150 5250 3150
+Wire Wire Line
+	5350 3150 5350 3250
+Wire Wire Line
+	5350 3450 5350 3750
+Wire Wire Line
+	5350 3750 4850 3750
+Connection ~ 4850 3750
+Wire Wire Line
+	4850 2700 4850 2550
+Wire Wire Line
+	4850 2550 4150 2550
+Wire Wire Line
+	3750 2950 3900 2950
+Wire Wire Line
+	3900 2950 3900 2550
+Wire Wire Line
+	3900 3150 3900 2950
+Connection ~ 3900 2950
+Wire Wire Line
+	3900 3350 3900 3750
+$Comp
+L Device:R_Small R?
+U 1 1 5EC86CF1
+P 4300 3050
+AR Path="/5EC86CF1" Ref="R?"  Part="1" 
+AR Path="/5EC757F2/5EC86CF1" Ref="R5"  Part="1" 
+F 0 "R5" V 4400 3050 50  0000 C CNN
+F 1 "1k" V 4195 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 3050 50  0001 C CNN
+F 3 "~" H 4300 3050 50  0001 C CNN
+F 4 "C21190" H 4300 3050 50  0001 C CNN "LCSC"
+	1    4300 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 2700 4150 2550
+Connection ~ 4150 2550
+Wire Wire Line
+	4150 2550 3900 2550
+$Comp
+L Device:LED_Small_ALT D?
+U 1 1 5EC86CFB
+P 4150 2800
+AR Path="/5EC86CFB" Ref="D?"  Part="1" 
+AR Path="/5EC757F2/5EC86CFB" Ref="D1"  Part="1" 
+F 0 "D1" H 4150 2700 50  0000 C CNN
+F 1 "LED" H 4150 2900 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 4150 2800 50  0001 C CNN
+F 3 "~" V 4150 2800 50  0001 C CNN
+F 4 "C72041" H 4150 2800 50  0001 C CNN "LCSC"
+	1    4150 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 2900 4150 3050
+Wire Wire Line
+	4150 3050 4200 3050
+Wire Wire Line
+	4400 3050 4450 3050
+Connection ~ 5350 3750
+$Comp
+L Device:CP_Small C?
+U 1 1 5EC86D0B
+P 8400 2650
+AR Path="/5EC86D0B" Ref="C?"  Part="1" 
+AR Path="/5EC757F2/5EC86D0B" Ref="C12"  Part="1" 
+F 0 "C12" H 8488 2696 50  0000 L CNN
+F 1 "10u" H 8488 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8400 2650 50  0001 C CNN
+F 3 "~" H 8400 2650 50  0001 C CNN
+F 4 "C15850" H 8400 2650 50  0001 C CNN "LCSC"
+	1    8400 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2550 5200 2550
+Connection ~ 4850 2550
+$Comp
+L Device:D_Schottky D?
+U 1 1 5EC86D1A
+P 7800 2000
+AR Path="/5EC86D1A" Ref="D?"  Part="1" 
+AR Path="/5EC757F2/5EC86D1A" Ref="D2"  Part="1" 
+F 0 "D2" H 7800 1784 50  0000 C CNN
+F 1 "D_Schottky" H 7800 1875 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 7800 2000 50  0001 C CNN
+F 3 "~" H 7800 2000 50  0001 C CNN
+F 4 "C2480" H 7800 2000 50  0001 C CNN "LCSC"
+	1    7800 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L remote_th:FS8205 U?
+U 1 1 5EC86D20
+P 6600 3750
+AR Path="/5EC86D20" Ref="U?"  Part="1" 
+AR Path="/5EC757F2/5EC86D20" Ref="U4"  Part="1" 
+F 0 "U4" H 7000 4000 50  0000 L CNN
+F 1 "FS8205" H 7000 3550 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 6600 3750 50  0001 C CNN
+F 3 "" H 6600 3750 50  0001 C CNN
+F 4 "C32254" H 6600 3750 50  0001 C CNN "LCSC"
+	1    6600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EC86D27
+P 7250 2600
+AR Path="/5EC86D27" Ref="R?"  Part="1" 
+AR Path="/5EC757F2/5EC86D27" Ref="R8"  Part="1" 
+F 0 "R8" V 7054 2600 50  0000 C CNN
+F 1 "470" V 7145 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7250 2600 50  0001 C CNN
+F 3 "~" H 7250 2600 50  0001 C CNN
+F 4 "C23179" V 7250 2600 50  0001 C CNN "LCSC"
+	1    7250 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EC86D2D
+P 7050 2750
+AR Path="/5EC86D2D" Ref="C?"  Part="1" 
+AR Path="/5EC757F2/5EC86D2D" Ref="C10"  Part="1" 
+F 0 "C10" H 7142 2796 50  0000 L CNN
+F 1 "100n" H 7142 2705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7050 2750 50  0001 C CNN
+F 3 "~" H 7050 2750 50  0001 C CNN
+F 4 "C14663" H 7050 2750 50  0001 C CNN "LCSC"
+	1    7050 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2600 7000 2600
+Wire Wire Line
+	3900 3750 4850 3750
+Wire Wire Line
+	7400 3000 7050 3000
+Wire Wire Line
+	6450 3150 6450 3250
+Wire Wire Line
+	6450 3250 6350 3250
+Wire Wire Line
+	6350 3250 6350 3350
+Wire Wire Line
+	6650 3150 6650 3250
+Wire Wire Line
+	6650 3250 6850 3250
+Wire Wire Line
+	6850 3250 6850 3350
+NoConn ~ 6600 3350
+NoConn ~ 6600 4100
+Wire Wire Line
+	6250 2800 5900 2800
+$Comp
+L Device:R_Small R?
+U 1 1 5ECA87E0
+P 5900 3400
+AR Path="/5ECA87E0" Ref="R?"  Part="1" 
+AR Path="/5EC757F2/5ECA87E0" Ref="R7"  Part="1" 
+F 0 "R7" V 6000 3400 50  0000 C CNN
+F 1 "1k" V 5795 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5900 3400 50  0001 C CNN
+F 3 "~" H 5900 3400 50  0001 C CNN
+F 4 "C21190" H 5900 3400 50  0001 C CNN "LCSC"
+	1    5900 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5900 2800 5900 3300
+Wire Wire Line
+	5900 3500 5900 3750
+Wire Wire Line
+	5900 3750 6150 3750
+Wire Wire Line
+	5350 3750 5800 3750
+Wire Wire Line
+	5250 3000 5500 3000
+NoConn ~ 6250 2650
+Wire Wire Line
+	7400 3000 7400 3400
+Wire Wire Line
+	7400 3750 7050 3750
+Wire Wire Line
+	7050 2650 7050 2600
+Wire Wire Line
+	7050 2850 7050 3000
+Connection ~ 7050 3000
+Wire Wire Line
+	7050 3000 7000 3000
+Wire Wire Line
+	7150 2600 7050 2600
+Connection ~ 7050 2600
+Wire Wire Line
+	7350 2600 7550 2600
+Wire Wire Line
+	7550 2700 7550 2600
+Connection ~ 7550 2600
+Wire Wire Line
+	7550 2900 7550 2950
+$Comp
+L power:GND #PWR0116
+U 1 1 5ECD0639
+P 5800 3800
+F 0 "#PWR0116" H 5800 3550 50  0001 C CNN
+F 1 "GND" H 5805 3627 50  0000 C CNN
+F 2 "" H 5800 3800 50  0001 C CNN
+F 3 "" H 5800 3800 50  0001 C CNN
+	1    5800 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3800 5800 3750
+$Comp
+L power:GND #PWR0117
+U 1 1 5ECD1A3E
+P 8150 3000
+F 0 "#PWR0117" H 8150 2750 50  0001 C CNN
+F 1 "GND" H 8155 2827 50  0000 C CNN
+F 2 "" H 8150 3000 50  0001 C CNN
+F 3 "" H 8150 3000 50  0001 C CNN
+	1    8150 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2600 7550 2450
+Wire Wire Line
+	7550 2600 7900 2600
+Text Label 5500 3000 0    50   ~ 0
+BAT+
+Text Label 7550 2350 2    50   ~ 0
+BAT+
+Wire Wire Line
+	7400 3400 7900 3400
+Connection ~ 7400 3400
+Wire Wire Line
+	7400 3400 7400 3750
+Text HLabel 7900 2600 2    50   BiDi ~ 0
+BAT+
+Text HLabel 7900 3400 2    50   BiDi ~ 0
+BAT-
+Text Label 5200 2550 0    50   ~ 0
+VUSB
+Text Label 7550 2000 2    50   ~ 0
+VUSB
+Wire Wire Line
+	7550 2000 7650 2000
+$Comp
+L Device:D_Schottky D?
+U 1 1 5ECE7AE1
+P 7800 2450
+AR Path="/5ECE7AE1" Ref="D?"  Part="1" 
+AR Path="/5EC757F2/5ECE7AE1" Ref="D3"  Part="1" 
+F 0 "D3" H 7800 2234 50  0000 C CNN
+F 1 "D_Schottky" H 7800 2325 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 7800 2450 50  0001 C CNN
+F 3 "~" H 7800 2450 50  0001 C CNN
+F 4 "C2480" H 7800 2450 50  0001 C CNN "LCSC"
+	1    7800 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7650 2450 7550 2450
+Connection ~ 7550 2450
+Wire Wire Line
+	7550 2450 7550 2350
+Wire Wire Line
+	7950 2000 8400 2000
+Wire Wire Line
+	8400 2000 8400 2450
+Wire Wire Line
+	8400 2450 7950 2450
+$Comp
+L Regulator_Linear:HT75xx-1-SOT89 U?
+U 1 1 5ECF9C9A
+P 8900 2550
+AR Path="/5ECF9C9A" Ref="U?"  Part="1" 
+AR Path="/5EC757F2/5ECF9C9A" Ref="U8"  Part="1" 
+F 0 "U8" H 8900 2917 50  0000 C CNN
+F 1 "HT75xx-1-SOT89" H 8900 2826 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-89-3" H 8900 2875 50  0001 C CIN
+F 3 "https://www.holtek.com/documents/10179/116711/HT75xx-1v250.pdf" H 8900 2650 50  0001 C CNN
+F 4 "C14289" H 8900 2550 50  0001 C CNN "LCSC"
+	1    8900 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2950 8150 2950
+Wire Wire Line
+	8900 2950 8900 2750
+Wire Wire Line
+	8150 3000 8150 2950
+Connection ~ 8150 2950
+Wire Wire Line
+	8150 2950 8400 2950
+Wire Wire Line
+	8400 2450 8600 2450
+Connection ~ 8400 2450
+Wire Wire Line
+	8400 2750 8400 2950
+Connection ~ 8400 2950
+Wire Wire Line
+	8400 2950 8900 2950
+Wire Wire Line
+	8400 2550 8400 2450
+$Comp
+L Device:CP_Small C?
+U 1 1 5ED0265C
+P 9350 2650
+AR Path="/5ED0265C" Ref="C?"  Part="1" 
+AR Path="/5EC757F2/5ED0265C" Ref="C13"  Part="1" 
+F 0 "C13" H 9438 2696 50  0000 L CNN
+F 1 "10u" H 9438 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9350 2650 50  0001 C CNN
+F 3 "~" H 9350 2650 50  0001 C CNN
+F 4 "C15850" H 9350 2650 50  0001 C CNN "LCSC"
+	1    9350 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2550 9350 2450
+Wire Wire Line
+	9350 2450 9200 2450
+Wire Wire Line
+	8900 2950 9350 2950
+Wire Wire Line
+	9350 2950 9350 2750
+Connection ~ 8900 2950
+$Comp
+L Device:CP_Small C?
+U 1 1 5ED065C0
+P 7550 2800
+AR Path="/5ED065C0" Ref="C?"  Part="1" 
+AR Path="/5EC757F2/5ED065C0" Ref="C11"  Part="1" 
+F 0 "C11" H 7638 2846 50  0000 L CNN
+F 1 "1u" H 7638 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7550 2800 50  0001 C CNN
+F 3 "~" H 7550 2800 50  0001 C CNN
+F 4 "C28323" H 7550 2800 50  0001 C CNN "LCSC"
+	1    7550 2800
+	1    0    0    -1  
+$EndComp
+Text HLabel 3750 2950 0    50   BiDi ~ 0
+VBUS
+Text HLabel 9400 2450 2    50   BiDi ~ 0
+Vcc
+Wire Wire Line
+	5900 3750 5800 3750
+Connection ~ 5900 3750
+Connection ~ 5800 3750
+Wire Wire Line
+	9400 2450 9350 2450
+Connection ~ 9350 2450
+$Comp
+L Connector:TestPoint TP10
+U 1 1 5EF2B3F2
+P 8400 1950
+F 0 "TP10" H 8458 2068 50  0000 L CNN
+F 1 "VIN_TP" H 8458 1977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8600 1950 50  0001 C CNN
+F 3 "~" H 8600 1950 50  0001 C CNN
+	1    8400 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 2000 8400 1950
+Connection ~ 8400 2000
+$EndSCHEMATC
